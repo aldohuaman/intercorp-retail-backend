@@ -12,6 +12,8 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import java.io.Serializable;
 
+import javax.validation.Valid;
+
 @NoArgsConstructor
 @Getter
 @Setter
@@ -21,6 +23,7 @@ public class ClientWebDto implements Serializable {
 	private static final long serialVersionUID = 3797170014472284596L;
 	
 	@JsonProperty("cliente")
+	@Valid
 	private Client client;
 	
 	private boolean processResult;
