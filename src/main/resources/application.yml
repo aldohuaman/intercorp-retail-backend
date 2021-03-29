@@ -1,0 +1,4 @@
+mongodb:
+  database:
+    name: retobackend
+    connection-string: 'mongodb+srv://irdigitalreto:passowrd123@cluster0.tf896.mongodb.net/retobackend?retryWrites=true&w=majority'
