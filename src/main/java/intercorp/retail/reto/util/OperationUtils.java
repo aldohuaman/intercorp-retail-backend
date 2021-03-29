@@ -15,9 +15,8 @@ public class OperationUtils {
 		double average = calculateAverage(numbers);
 		double standardDeviation = 0.0;
 
-		for (int number : numbers) {
-			standardDeviation += Math.pow(number - average, 2);
-		}
+		standardDeviation = Arrays.stream(numbers).mapToDouble(n -> Math.pow(n - average, 2)).sum();
+		
 		return Math.sqrt(standardDeviation / numbers.length);
 	}
 

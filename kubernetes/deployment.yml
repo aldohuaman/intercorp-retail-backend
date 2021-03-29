@@ -22,7 +22,7 @@ spec:
         deployment: v1
     spec:
       containers:
-        - image: ${containerRegistryServer}/reto:001
+        - image: ${containerRegistryServer}/reto:0.0.1
           name: reto-001
           imagePullPolicy: Always
           resources:
